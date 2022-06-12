@@ -10,6 +10,7 @@ class Offset
 
   def last_four
     last_4_dig = squared.to_s[-4..-1].to_i
-  
   end
+
+  # def add_to_keys
 end

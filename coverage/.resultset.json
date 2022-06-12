@@ -12,6 +12,7 @@
           1,
           null,
           null,
+          null,
           1,
           1,
           null,
@@ -51,7 +52,6 @@
           1,
           4,
           4,
-          4,
           null,
           null,
           1,
@@ -66,6 +66,7 @@
           1,
           null,
           null,
+          1,
           1,
           1,
           null,
@@ -101,10 +102,44 @@
           1,
           1,
           null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/gaurijoshi/turing/1Module/projects/Enigma-Final/lib/offset.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1655003115
+    "timestamp": 1655065245
   }
 }
