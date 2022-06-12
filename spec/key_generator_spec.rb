@@ -6,6 +6,7 @@ RSpec.describe KeyGenerator do
   before :each do
     @enigma = Enigma.new
     @key_generator = KeyGenerator.new
+    @key = "12345"
   end
 
   it "exists" do
@@ -18,5 +19,9 @@ RSpec.describe KeyGenerator do
 
   it "can convert the 5 digit string into an array" do
     expect(@key_generator.string_to_array).to be_a(Array)
+  end
+
+  it "can parse through an array to create consecutive pairs of digits" do
+    expect(@key_generator.pairs).to be_a(Array)
   end
 end
