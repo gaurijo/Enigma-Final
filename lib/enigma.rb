@@ -8,9 +8,9 @@ class Enigma
     @character_set = character_set
   end
 
-  def character_set
-    ("a".."z").to_a << " "
-  end
+  # def character_set
+  #   ("a".."z").to_a << " "
+  # end
 
   # def encrypt(message)
   #   ##message should follow i/o to create encrypted msg
