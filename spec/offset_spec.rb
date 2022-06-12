@@ -25,14 +25,15 @@ RSpec.describe Offset do
   it "returns the last 4 digits of its squared numeric date" do
     expect(@offset.last_four).to eq(6884)
   end
-
-  xit "can create a date in DDMMYY format if no date is given" do
-
-  end
-
-  # it "can be added to keys to create final shifts" do
-  #
-  #   expect(@offset.add_to_keys).to be_a(Array)
-  # end
-
 end
+
+#   xit "can create a date in DDMMYY format if no date is given" do
+#
+#   end
+#
+#   # it "can be added to keys to create final shifts" do
+#   #
+#   #   expect(@offset.add_to_keys).to be_a(Array)
+#   # end
+#
+# end

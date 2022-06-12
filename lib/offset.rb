@@ -1,7 +1,7 @@
 class Offset
   attr_reader :date
   def initialize(date)
-    @date = date
+    @date = date.to_i
   end
 
   def squared
