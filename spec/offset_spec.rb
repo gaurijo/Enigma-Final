@@ -17,4 +17,12 @@ RSpec.describe Offset do
   it "has a date written in numeric DDMMYY format" do
     expect(@offset.date).to eq(110622)
   end
+
+  it "can square its numeric date" do
+    expect(@offset.squared).to eq(12237226884)
+  end
+
+  it "returns the last 4 digits of its squared numeric date" do
+    expect(@offset.last_four).to eq(6884)
+  end
 end
