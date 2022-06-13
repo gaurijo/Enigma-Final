@@ -21,7 +21,6 @@ RSpec.describe KeyGenerator do
   end
 
   it "can parse through an array to create consecutive pairs of digits" do
-    expect(@enigma.pairs).to be_a(Array)
-    expect(@enigma.pairs.length).to eq(4)
+    expect(@enigma.pairs([1,2,3,4,5])).to eq([12, 23, 34, 45])
   end
 end

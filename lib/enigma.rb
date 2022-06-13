@@ -18,7 +18,7 @@ class Enigma
   end
 
   def shift(offset, key)
-    # require "pry"; binding.pry
+    require "pry"; binding.pry
   end
 
   def encrypt(message, key, date)
