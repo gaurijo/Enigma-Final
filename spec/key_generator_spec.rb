@@ -17,7 +17,7 @@ RSpec.describe KeyGenerator do
   end
 
   it "can convert the 5 digit string into an array" do
-    expect(@enigma.string_to_array).to be_a(Array)
+    expect(@enigma.string_to_array("12345")).to eq([1,2,3,4,5])
   end
 
   it "can parse through an array to create consecutive pairs of digits" do
