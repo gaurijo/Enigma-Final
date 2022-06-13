@@ -2,12 +2,14 @@ require './lib/enigma'
 require './lib/key_generator'
 require './lib/offset'
 require 'date'
-require_relative './spec_helper'
+require 'time'
+# require_relative './spec_helper'
 
 RSpec.describe Offset do
   before :each do
     @enigma = Enigma.new
-    @offset = Offset.new(110622)
+    @offset = Offset.new("110622")
+    @time = Time.new
   end
 
   it "exists" do
@@ -25,11 +27,12 @@ RSpec.describe Offset do
   it "returns the last 4 digits of its squared numeric date" do
     expect(@offset.last_four).to eq(6884)
   end
-end
 
-#   xit "can create a date in DDMMYY format if no date is given" do
-#
-#   end
+
+  it "can create a date in DDMMYY format if no date is given" do
+    expect(@offset.format_date("06-12-2022")).to eq(120622)
+  end
+end
 #
 #   # it "can be added to keys to create final shifts" do
 #   #
