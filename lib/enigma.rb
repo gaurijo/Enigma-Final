@@ -1,4 +1,4 @@
-require './required_files.rb'
+require '../required_files'
 class Enigma
   include KeyGenerator
   attr_reader :message, :key, :date, :character_set
@@ -17,23 +17,17 @@ class Enigma
     message.split(//)
   end
 
-  def shift(offset, key)
-    require "pry"; binding.pry
-  end
+  # def shift
+  #   require "pry"; binding.pry
+  #   @key.pairs
+  # end
 
   def encrypt(message, key, date)
     encrypted_msg = {}
     encrypted_msg[:encryption] = message_split(message)
-    ##Using .upcase as a placeholder for now
     encrypted_msg[:key] = key
     encrypted_msg[:date] = date
     return encrypted_msg
   end
-
-  # def key_generator
-  #   key = 5.times.map{rand(0..4)}.join
-  # end
-
-
 
 end

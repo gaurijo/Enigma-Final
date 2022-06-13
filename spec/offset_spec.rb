@@ -3,7 +3,7 @@ require './lib/key_generator'
 require './lib/offset'
 require 'date'
 require 'time'
-# require_relative './spec_helper'
+require_relative './spec_helper'
 
 RSpec.describe Offset do
   before :each do
