@@ -1,6 +1,6 @@
 require './lib/enigma'
 require './lib/key_generator'
-require_relative './spec_helper'
+# require_relative './spec_helper'
 
 RSpec.describe KeyGenerator do
   before :each do
