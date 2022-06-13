@@ -12,7 +12,7 @@ class Offset
     last_4_dig = squared.to_s[-4..-1].to_i
   end
 
-  def format_date(unformatted_date)
+  def self.format_date(unformatted_date)
     unformatted_date = (Time.new).strftime("%d%m%y").to_i
   end
 end

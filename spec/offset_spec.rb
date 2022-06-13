@@ -3,7 +3,7 @@ require './lib/key_generator'
 require './lib/offset'
 require 'date'
 require 'time'
-# require_relative './spec_helper'
+require_relative './spec_helper'
 
 RSpec.describe Offset do
   before :each do
@@ -30,7 +30,8 @@ RSpec.describe Offset do
 
 
   it "can create a date in DDMMYY format if no date is given" do
-    expect(@offset.format_date("06-12-2022")).to eq(120622)
+    allow(Offset).to receive(:format_date).and_return Offset.new("06-12-2022")
+    # expect(@offset.format_date("06-12-2022")).to eq(120622)
   end
 end
 #
