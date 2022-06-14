@@ -5,7 +5,6 @@
         "lines": [
           1,
           1,
-          null,
           1,
           12,
           null,
@@ -16,10 +15,7 @@
           null,
           null,
           null,
-          null,
-          null,
           1,
-          null,
           0,
           0,
           0,
@@ -33,7 +29,7 @@
           1,
           1,
           1,
-          12,
+          20,
           null,
           null,
           1,
@@ -50,22 +46,11 @@
           null
         ]
       },
-      "/Users/gaurijoshi/turing/1Module/projects/Enigma-Final/lib/shift.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          16,
-          null,
-          null
-        ]
-      },
       "/Users/gaurijoshi/turing/1Module/projects/Enigma-Final/spec/spec_helper.rb": {
         "lines": [
           1,
           1,
           null,
-          1,
           1,
           1,
           1
@@ -138,24 +123,18 @@
         "lines": [
           1,
           1,
+          null,
+          null,
           1,
-          null,
           1,
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           1,
           1,
           null,
           null,
-          null,
-          null,
+          1,
           null,
           null,
           null,
@@ -200,14 +179,6 @@
           1,
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -217,15 +188,13 @@
           1,
           1,
           1,
-          null,
+          1,
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
+          4,
+          4,
+          null,
           null,
           null,
           1,
@@ -237,12 +206,41 @@
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gaurijoshi/turing/1Module/projects/Enigma-Final/lib/shift.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1655161089
+    "timestamp": 1655166845
   }
 }

@@ -1,27 +1,29 @@
 require './lib/enigma'
 require './lib/key_generator'
-require './lib/offset'
 require './lib/shift'
-# require_relative './spec_helper'
+require './lib/offset'
+require_relative './spec_helper'
 
 RSpec.describe Shift do
   before :each do
-    @a_shift = Shift.new("A")
-    @b_shift = Shift.new("B")
-    @c_shift = Shift.new("C")
-    @d_shift = Shift.new("D")
-    @enigma = Enigma.new
+  @offset = Offset.new("110622")
+  @shift = Shift.new("02715", "110622")
+
   end
 
   it "exists" do
-    expect(@a_shift).to be_a(Shift)
+    expect(@shift).to be_a(Shift)
   end
 
-  it "has a name" do
-    expect(@a_shift.name).to eq("A")
+  it "has a key" do
+    expect(@shift.key).to eq("02715")
   end
 
-  xit "can move a letter a given number of spaces" do
+  it "has a date" do
+    expect(@shift.date).to eq("110622")
+  end
 
+  it "has a collection of 4 shifts - A, B, C, D, which is the sum of the key and last four digits in integer form" do
+    expect(@shift.shifts).to eq({:A => 8, :B => 35, :C => 79, :D => 19})
   end
 end

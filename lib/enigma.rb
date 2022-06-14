@@ -9,6 +9,7 @@ class Enigma
     @character_set = character_set
   end
 
+
   def character_set
     ("a".."z").to_a << " "
   end
@@ -17,12 +18,8 @@ class Enigma
     message.split(//)
   end
 
-  # def shift
-  #   require "pry"; binding.pry
-  #   @key.pairs
-  # end
 
-  def encrypt(message, key, date)
+  def encrypt(message, key = key_generator, date = self.format_date)
     encrypted_msg = {}
     encrypted_msg[:encryption] = message_split(message)
     encrypted_msg[:key] = key
