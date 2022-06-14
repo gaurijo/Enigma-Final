@@ -17,7 +17,7 @@ class Enigma
     message.split(//)
   end
 
-  def encrypt(message, key = key_generator, date = self.format_date)
+  def encrypt(message, key, date)
     encrypted_msg = {}
     encrypted_msg[:encryption] = message_split(message)
     encrypted_msg[:key] = key
