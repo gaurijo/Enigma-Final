@@ -28,7 +28,6 @@ RSpec.describe Offset do
     expect(@offset.last_four).to eq(6884)
   end
 
-
   it "can create a date in DDMMYY format if no date is given" do
     allow(Offset).to receive(:format_date).and_return Offset.new("06-12-2022")
   end

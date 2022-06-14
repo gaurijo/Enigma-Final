@@ -6,9 +6,8 @@ require_relative './spec_helper'
 
 RSpec.describe Shift do
   before :each do
-  @offset = Offset.new("110622")
-  @shift = Shift.new("02715", "110622")
-
+    @offset = Offset.new("110622")
+    @shift = Shift.new("02715", "110622")
   end
 
   it "exists" do

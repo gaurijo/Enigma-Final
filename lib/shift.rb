@@ -10,7 +10,6 @@ class Shift
   end
 
   def shifts
-    #hard coded for now#
     {
       A: 02 + 6,
       B: 27 + 8,

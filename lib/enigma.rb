@@ -9,7 +9,6 @@ class Enigma
     @character_set = character_set
   end
 
-
   def character_set
     ("a".."z").to_a << " "
   end
@@ -17,7 +16,6 @@ class Enigma
   def message_split(message)
     message.split(//)
   end
-
 
   def encrypt(message, key = key_generator, date = self.format_date)
     encrypted_msg = {}
@@ -27,4 +25,11 @@ class Enigma
     return encrypted_msg
   end
 
+  def decrypt(message, key, date)
+    decrypted_msg = {}
+    decrypted_msg[:decryption]
+    decrypted_msg[:key] = key
+    decrypted_msg[:date] = date
+    return decrypted_msg
+  end
 end
