@@ -30,7 +30,7 @@ RSpec.describe Enigma do
   end
 
   it "can iterate through the 5 digit key as an array and convert them into consecutive pairs that are joined into one integer" do
-    expect(@enigma.pairs).to be_a(Integer)
+    expect(@enigma.pairs).to be_a(Array)
   end
 
   it "can encrypt a message with a key and date" do
