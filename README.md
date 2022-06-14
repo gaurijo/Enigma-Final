@@ -32,7 +32,7 @@ TDD process followed with testing and errors guiding the code/methods
 One instance of `mock/stubs` used in the `Offset` class, to test creating a new date and always outputting the current date
 
 ### Version Control: 3
-30+ commits and 10 pull requests
+40 commits and 10 pull requests
 
 Pull requests are clearly documented using a standard template
 
