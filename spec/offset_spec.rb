@@ -28,16 +28,7 @@ RSpec.describe Offset do
     expect(@offset.last_four).to eq(6884)
   end
 
-
   it "can create a date in DDMMYY format if no date is given" do
     allow(Offset).to receive(:format_date).and_return Offset.new("06-12-2022")
-    # expect(@offset.format_date("06-12-2022")).to eq(120622)
   end
 end
-#
-#   # it "can be added to keys to create final shifts" do
-#   #
-#   #   expect(@offset.add_to_keys).to be_a(Array)
-#   # end
-#
-# end

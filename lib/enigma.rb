@@ -17,12 +17,7 @@ class Enigma
     message.split(//)
   end
 
-  # def shift
-  #   require "pry"; binding.pry
-  #   @key.pairs
-  # end
-
-  def encrypt(message, key, date)
+  def encrypt(message, key = key_generator, date = self.format_date)
     encrypted_msg = {}
     encrypted_msg[:encryption] = message_split(message)
     encrypted_msg[:key] = key
@@ -30,4 +25,11 @@ class Enigma
     return encrypted_msg
   end
 
+  def decrypt(message, key, date)
+    decrypted_msg = {}
+    decrypted_msg[:decryption]
+    decrypted_msg[:key] = key
+    decrypted_msg[:date] = date
+    return decrypted_msg
+  end
 end
