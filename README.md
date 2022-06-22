@@ -1,6 +1,6 @@
 # Enigma-Final
 
-### Functionality: 1 or 2
+
 Although I was able to set up most of my Classes/Module/methods correctly, because I wasn't able to get
 my `Shift Class` to behave the way I intended, my `Encrypt/Decrypt` methods couldn't be successfully implemented. In lieu of this I put in a placeholder `message_split` method in my `Enigma` class to demonstrate some kind of change/mock encryption to the original message. I wanted to use this method and a `rotate` method on the `encrypted msg` and `character set`.
 
